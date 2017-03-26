@@ -1,4 +1,4 @@
-package com.edccorp.pokedex;
+package com.edccorp.pokedex.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,9 +6,11 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.edccorp.pokedex.Models.Pokemon;
-import com.edccorp.pokedex.Models.PokemonResponse;
+import com.edccorp.pokedex.Adapters.ItemAdapter;
+import com.edccorp.pokedex.Models.ItemModel;
+import com.edccorp.pokedex.Models.ItemResponse;
 import com.edccorp.pokedex.PokeApi.ApiService;
+import com.edccorp.pokedex.R;
 
 import java.util.ArrayList;
 
@@ -18,31 +20,30 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity {
+public class ItemsActivity extends AppCompatActivity {
 
-    private static final String TAG = "POKEDEX";
+    private static final String TAG = "ITEM";
     private Retrofit retrofit;
-    private RecyclerView recyclerView;
-    private ListAdapter listAdapter;
+    private RecyclerView recyclerViewItem;
+    private ItemAdapter itemAdapter;
     private int offset;
 
     private boolean fitLoad;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_items);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        listAdapter = new ListAdapter(this);
-        recyclerView.setAdapter(listAdapter);
-        recyclerView.setHasFixedSize(true);
+        recyclerViewItem = (RecyclerView) findViewById(R.id.recyclerViewItem);
+        itemAdapter = new ItemAdapter(this);
+        recyclerViewItem.setAdapter(itemAdapter);
+        recyclerViewItem.setHasFixedSize(true);
         final GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerViewItem.setLayoutManager(layoutManager);
 
 
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        recyclerViewItem.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -53,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
                     int pastVisibleItems = layoutManager.findFirstVisibleItemPosition();
 
                     if (fitLoad) {
-                        if ((visibleItemCount + pastVisibleItems) >= totalItemCount ) {
+                        if ((visibleItemCount + pastVisibleItems) >= totalItemCount) {
                             Log.i(TAG, " Final.");
 
                             fitLoad = false;
                             offset += 20;
-                            testData(offset);
+                            getData(offset);
                         }
                     }
                 }
@@ -73,26 +74,28 @@ public class MainActivity extends AppCompatActivity {
         fitLoad = true;
         offset = 0;
 
-        testData(offset);
+        getData(offset);
+
     }
 
-    private void testData(int offset) {
+
+    private void getData(int offset) {
 
         ApiService service = retrofit.create(ApiService.class);
-        Call<PokemonResponse> pokemonResponseCall = service.getListPokemon(20, offset);
+        Call<ItemResponse> itemResponseCall = service.getListItem(20, offset);
 
-        pokemonResponseCall.enqueue(new Callback<PokemonResponse>() {
+        itemResponseCall.enqueue(new Callback<ItemResponse>() {
             @Override
-            public void onResponse(Call<PokemonResponse> call, Response<PokemonResponse> response) {
+            public void onResponse(Call<ItemResponse> call, Response<ItemResponse> response) {
 
                 fitLoad = true;
 
                 if (response.isSuccessful()) {
 
-                    PokemonResponse pokemonResponse = response.body();
-                    ArrayList<Pokemon> listPokemon = pokemonResponse.getResults();
+                    ItemResponse itemResponse = response.body();
+                    ArrayList<ItemModel> listItem = itemResponse.getResults();
 
-                    listAdapter.addList(listPokemon);
+                    itemAdapter.addList(listItem);
 
                 }
 
@@ -102,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<PokemonResponse> call, Throwable t) {
+            public void onFailure(Call<ItemResponse> call, Throwable t) {
 
                 fitLoad = true;
 

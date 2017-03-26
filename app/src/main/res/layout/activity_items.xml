@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context="com.edccorp.pokedex.Activities.MainActivity">
+    tools:context="com.edccorp.pokedex.Activities.ItemsActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewItem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
