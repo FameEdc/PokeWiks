@@ -1,7 +1,6 @@
 package com.edccorp.pokedex.Activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -13,14 +12,14 @@ import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.ButtonEnum;
 import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 
-public class LandingActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private BoomMenuButton bmb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landing);
+        setContentView(R.layout.activity_main);
 
         bmb = (BoomMenuButton) findViewById(R.id.bmb);
         bmb.setButtonEnum(ButtonEnum.SimpleCircle);
@@ -35,21 +34,21 @@ public class LandingActivity extends AppCompatActivity {
                 public void onBoomButtonClick(int index) {
 
                     if (index == 0) {
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), PokedexActivity.class);
                         startActivity(intent);
                     }
 
                     if (index == 1) {
-                        startActivity(new Intent(LandingActivity.this, ItemsActivity.class));
+                        startActivity(new Intent(MainActivity.this, ItemsActivity.class));
                     }
 
 
                     if (index == 2) {
-                        startActivity(new Intent(LandingActivity.this, RegionActivity.class));
+                        startActivity(new Intent(MainActivity.this, RegionActivity.class));
                     }
 
                     if (index == 3) {
-                        startActivity(new Intent(LandingActivity.this, EggActivity.class));
+                        startActivity(new Intent(MainActivity.this, EggActivity.class));
                     }
                 }
             }));

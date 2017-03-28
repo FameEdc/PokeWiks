@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ItemsActivity extends AppCompatActivity {
 
-    private static final String TAG = "ITEM";
+    private static final String TAG = "";
     private Retrofit retrofit;
     private RecyclerView recyclerViewItem;
     private ItemAdapter itemAdapter;
@@ -82,7 +82,7 @@ public class ItemsActivity extends AppCompatActivity {
     private void getData(int offset) {
 
         ApiService service = retrofit.create(ApiService.class);
-        Call<ItemResponse> itemResponseCall = service.getListItem(20, offset);
+        Call<ItemResponse> itemResponseCall = service.getListItem(150, offset);
 
         itemResponseCall.enqueue(new Callback<ItemResponse>() {
             @Override

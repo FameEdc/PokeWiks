@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 
-import com.edccorp.pokedex.Adapters.ListAdapter;
+import com.edccorp.pokedex.Adapters.PokedexAdapter;
 import com.edccorp.pokedex.Models.PokemonModel;
 import com.edccorp.pokedex.Models.PokemonResponse;
 import com.edccorp.pokedex.PokeApi.ApiService;
@@ -20,12 +21,14 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity {
+import static java.security.AccessController.getContext;
+
+public class PokedexActivity extends AppCompatActivity {
 
     private static final String TAG = "POKEDEX";
-    private Retrofit retrofit;
+    public static Retrofit retrofit;
     private RecyclerView recyclerView;
-    private ListAdapter listAdapter;
+    private PokedexAdapter pokedexAdapter;
     private int offset;
 
     private boolean fitLoad;
@@ -34,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pokedex);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        listAdapter = new ListAdapter(this);
-        recyclerView.setAdapter(listAdapter);
+        pokedexAdapter = new PokedexAdapter(this);
+        recyclerView.setAdapter(pokedexAdapter);
         recyclerView.setHasFixedSize(true);
         final GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
@@ -67,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         retrofit = new Retrofit.Builder()
                 .baseUrl("http://pokeapi.co/api/v2/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -95,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     PokemonResponse pokemonResponse = response.body();
                     ArrayList<PokemonModel> listPokemonModel = pokemonResponse.getResults();
 
-                    listAdapter.addList(listPokemonModel);
+                    pokedexAdapter.addList(listPokemonModel);
 
                 }
 
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(TAG, " onResponse " + response.errorBody());
                 }
             }
+
 
             @Override
             public void onFailure(Call<PokemonResponse> call, Throwable t) {
