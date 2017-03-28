@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_4244370cb2a15dce7c0836ad4d8ce06df1ac9acc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\4149d5c5f1af01eab5b6eecdb60abf4471343eb5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_26cef2f8300c86fabdfb5d4ba7def0be951aab38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_61a566e1ad79e964035f6c2a4fed66793056e70c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="32d2cfb72bd0e4fd55e1e0937d898585f499caf4">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f5c9bef58296bd55d1a59c3418058b326b5cadda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\00735caa9e2aa35f96951033ce653733fd075ee1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b0a26b11855f3c4209cc7e175ab854a853fc9c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_edc03c12ae9fa2aaf1f0d8337cc7c51caed289ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\d03e92a17f2c4e65ec5ebeb7dea4ec209c091c5b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_910a601acf3a2bacfcccb4ef991ddd3272c97fa3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\a1e326c2f475f45b43fe255ad2de7c40b0d853f5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95ce2bd6eb85045d205680fd542c7ef0104fdc37\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\0ae551630f129d25c04012975c4657e0259fa2fe\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_58a90339073bf4397a333de8dcae7ba10ea4fc73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\198970c14bc63a641fff082745122ca42954fc75\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf729355c86f6f122a4f88254d33ccfddf6961fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_523774d231339086119ca00b40725026874af9ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\f7bf70c376974f903335452c049fe629870d83ff\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0b95b0c780707b320761afd1069e0323309347be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_e31bbad7465ac37b3891a32268aaa53d6ad0a77d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\e24c1d3a1087a9d269016f2e1195f509cb00ffc4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b4929a7ddf78b8197982f926ed5de3bf102e0d68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\754d48440301b2881bde08093ec13333f6b44552\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4ae5f3b9140c959430accd4ff092bdcae12bc3b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2a357b4ea0f848b44105e6adddddee50aade100b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\1239712b817edf6800a7dfa3fbf90e2e2c922118\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_487a56de367425b35bbff13fa9b8c319166aabe9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_91df8bff9459642d919cd8b524eed0e4f0a1ea1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\c0a698debc62b7c279482b3f5b4b814ea1d895cf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9ab56b690494fdec885438cd661568b64016efea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\9664256db05fc3cc43ec24a088b9813310e6b997\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5b2f14edf8ff4b803bd44f9645ba5e3bfc06e41\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ribei\.android\build-cache\98f7f6cd56e9ae1ae9fd86e4eac9549016f1f256\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\ribei\Documents\Pokedex\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78e0913f31846a736a91e105f257a269f3558a5b\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="constraint-layout-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b5c3f5fbc93bfde6d9e30952fd277acbd8e86758/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b5c3f5fbc93bfde6d9e30952fd277acbd8e86758/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
