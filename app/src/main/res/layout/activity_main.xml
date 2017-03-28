@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.edccorp.pokedex.Activities.MainActivity">
+
+    <ImageView
+        android:layout_width="325dp"
+        android:layout_height="158dp"
+        android:src="@drawable/pokewiks_logo"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="357dp"
+        android:layout_height="204dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/poke_land"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/bmb"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="72dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:bmb_normalColor="@android:color/holo_orange_light"
+        app:bmb_highlightedColor="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>
