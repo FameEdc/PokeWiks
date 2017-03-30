@@ -1,7 +1,0 @@
-#Tue Mar 28 17:16:42 CEST 2017
-base.0=C\:\\Users\\ribei\\Documents\\Pokedex\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f5c9bef58296bd55d1a59c3418058b326b5cadda
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\ribei\\Documents\\Pokedex\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2a357b4ea0f848b44105e6adddddee50aade100b\\classes.dex
-base.1=C\:\\Users\\ribei\\Documents\\Pokedex\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2a357b4ea0f848b44105e6adddddee50aade100b
-file.0=C\:\\Users\\ribei\\Documents\\Pokedex\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f5c9bef58296bd55d1a59c3418058b326b5cadda\\classes.dex

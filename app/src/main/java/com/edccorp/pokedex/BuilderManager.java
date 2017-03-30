@@ -9,13 +9,10 @@ import com.nightonke.boommenu.BoomButtons.SimpleCircleButton;
 public class BuilderManager {
 
     private static int[] imageResources = new int[]{
-
             R.drawable.ic_pokedex,
             R.drawable.ic_pokeball,
             R.drawable.ic_region,
             R.drawable.ic_egg,
-
-
     };
 
     private static int imageResourceIndex = 0;
@@ -28,12 +25,6 @@ public class BuilderManager {
     public static SimpleCircleButton.Builder getSimpleCircleButtonBuilder() {
         return new SimpleCircleButton.Builder()
                 .normalImageRes(getImageResource());
-    }
-
-    private static BuilderManager ourInstance = new BuilderManager();
-
-    public static BuilderManager getInstance() {
-        return ourInstance;
     }
 
     private BuilderManager() {

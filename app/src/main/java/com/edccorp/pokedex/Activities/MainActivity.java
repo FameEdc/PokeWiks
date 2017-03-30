@@ -1,8 +1,8 @@
 package com.edccorp.pokedex.Activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.edccorp.pokedex.BuilderManager;
 import com.edccorp.pokedex.R;
@@ -26,28 +26,17 @@ public class MainActivity extends AppCompatActivity {
         bmb.setPiecePlaceEnum(PiecePlaceEnum.DOT_4_2);
         bmb.setButtonPlaceEnum(ButtonPlaceEnum.SC_4_2);
 
-        assert bmb != null;
-
         for (int i = 0; i < bmb.getPiecePlaceEnum().pieceNumber(); i++) {
             bmb.addBuilder(BuilderManager.getSimpleCircleButtonBuilder().listener(new OnBMClickListener() {
                 @Override
                 public void onBoomButtonClick(int index) {
-
                     if (index == 0) {
-                        Intent intent = new Intent(getApplicationContext(), PokedexActivity.class);
-                        startActivity(intent);
-                    }
-
-                    if (index == 1) {
+                        startActivity(new Intent(MainActivity.this, PokedexActivity.class));
+                    } else if (index == 1) {
                         startActivity(new Intent(MainActivity.this, ItemsActivity.class));
-                    }
-
-
-                    if (index == 2) {
+                    } else if (index == 2) {
                         startActivity(new Intent(MainActivity.this, RegionActivity.class));
-                    }
-
-                    if (index == 3) {
+                    } else if (index == 3) {
                         startActivity(new Intent(MainActivity.this, EggActivity.class));
                     }
                 }

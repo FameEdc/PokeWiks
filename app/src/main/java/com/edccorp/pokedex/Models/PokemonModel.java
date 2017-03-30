@@ -3,18 +3,21 @@ package com.edccorp.pokedex.Models;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 
 /**
  * Created by ribei on 25/03/2017.
  */
 
-public class PokemonModel implements Parcelable {
+public class PokemonModel implements Parcelable, Item {
 
     private int number;
     private String url;
     private String name;
+    private List<PokemonStats> stats;
+
+    final String imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
 
     protected PokemonModel(Parcel in) {
@@ -43,21 +46,14 @@ public class PokemonModel implements Parcelable {
         this.name = name;
     }
 
-    public String getUrl() {
-        return url;
+    @Override
+    public String getImageUrl() {
+        return imageUrl + getId() + ".png";
     }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public int getNumber() {
+    public String getId() {
         String[] urlPart = url.split("/");
-        return Integer.parseInt(urlPart[urlPart.length - 1]);
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+        return urlPart[urlPart.length - 1];
     }
 
     @Override
@@ -70,5 +66,9 @@ public class PokemonModel implements Parcelable {
         dest.writeInt(number);
         dest.writeString(url);
         dest.writeString(name);
+    }
+
+    public List<PokemonStats> getStats() {
+        return stats;
     }
 }
