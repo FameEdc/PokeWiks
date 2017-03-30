@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
+    android:orientation="vertical"
     tools:context="com.edccorp.pokedex.Activities.StatActivity">
 
     <ImageView
         android:id="@+id/pokemonTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:layout_marginTop="10sp"
         android:src="@drawable/pokemon_title" />
 
@@ -19,136 +19,23 @@
         android:id="@+id/imgPok"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_below="@+id/pokemonTitle"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/txtName"
-        android:layout_below="@+id/imgPok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:padding="10dp"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        />
+        android:textSize="15sp"
+        tools:text="Mon titre" />
 
-    <TextView
-        android:id="@+id/txtAtk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_atk"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/txtName"
-        android:layout_toStartOf="@+id/txtSpeDef"
-        android:layout_marginEnd="15dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/txtDef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_def"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_alignBaseline="@+id/txtSpeed"
-        android:layout_alignBottom="@+id/txtSpeed"
-        android:layout_alignEnd="@+id/txtAtk" />
 
-    <TextView
-        android:id="@+id/txtHP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_hp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_alignBaseline="@+id/txtAtk"
-        android:layout_alignBottom="@+id/txtAtk"
-        android:layout_toEndOf="@+id/txtSpeDef"
-        android:layout_marginStart="32dp" />
-
-    <TextView
-        android:id="@+id/txtSpeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_speed"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/txtHP"
-        android:layout_alignEnd="@+id/txtHP" />
-
-    <TextView
-        android:id="@+id/txtSpeAtk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_special_atk"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/txtSpeed"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/txtSpeDef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_special_def"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/txtSpeAtk"
-        android:layout_alignEnd="@+id/txtSpeAtk" />
-
-    <TextView
-        android:id="@+id/atk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtAtk"
-        android:layout_alignBottom="@+id/txtAtk"
-        android:layout_alignStart="@+id/txtSpeDef" />
-
-    <TextView
-        android:id="@+id/def"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtDef"
-        android:layout_alignBottom="@+id/txtDef"
-        android:layout_alignStart="@+id/atk" />
-
-    <TextView
-        android:id="@+id/hp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/txtHP"
-        android:layout_toEndOf="@+id/txtHP"
-        android:layout_marginStart="14dp" />
-
-    <TextView
-        android:id="@+id/speed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtSpeed"
-        android:layout_alignBottom="@+id/txtSpeed"
-        android:layout_alignStart="@+id/hp" />
-
-    <TextView
-        android:id="@+id/specialAtk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtSpeAtk"
-        android:layout_alignBottom="@+id/txtSpeAtk"
-        android:layout_toStartOf="@+id/txtSpeed" />
-
-    <TextView
-        android:id="@+id/specialDef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtSpeDef"
-        android:layout_alignBottom="@+id/txtSpeDef"
-        android:layout_alignStart="@+id/specialAtk" />
-
-</RelativeLayout>
+</LinearLayout>

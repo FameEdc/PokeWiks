@@ -20,7 +20,7 @@
         android:layout_width="357dp"
         android:layout_height="204dp"
         android:layout_marginRight="20dp"
-        android:src="@drawable/poke_land"
+        android:src="@drawable/poke_land2"
         android:layout_marginBottom="47dp"
         android:layout_above="@+id/bmb"
         android:layout_centerHorizontal="true" />

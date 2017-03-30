@@ -1,6 +1,6 @@
 package com.edccorp.pokedex.Models;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by ribei on 25/03/2017.
@@ -8,14 +8,10 @@ import java.util.ArrayList;
 
 public class ItemResponse {
 
-    private ArrayList<ItemModel> results;
+    private List<ItemModel> results;
 
-    public ArrayList<ItemModel> getResults() {
+    public List<ItemModel> getResults() {
         return results;
-    }
-
-    public void setResults(ArrayList<ItemModel> results) {
-        this.results = results;
     }
 
 }
